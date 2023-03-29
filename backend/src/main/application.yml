@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+#    数据库
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  profiles:
+    active: prod
+  datasource:
+    username: root
+    url: jdbc:mysql://localhost:3306/mentor?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
