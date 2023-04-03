@@ -1,17 +1,11 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-import Vue from 'vue'
-import App from './App'
-import axios from 'axios'
-import VueAxios from 'vue-axios'
+import { createApp } from 'vue'
+import './index.css'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+import Homepage from './Homepage.vue'
 
-Vue.use(VueAxios, axios);
+const homepage = createApp(Homepage)
 
-Vue.config.productionTip = false
+homepage.use(ElementPlus)
 
-/* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  components: { App },
-  template: '<App/>'
-})
+homepage.mount('#homepage')
