@@ -4,7 +4,6 @@
             <homepage_nav></homepage_nav>
             <homepage_hero></homepage_hero>
             <homepage_search></homepage_search>
-            <el-backtop :right="100" :bottom="100" class="z-100"/>
         </div>
     </div>
 </template>

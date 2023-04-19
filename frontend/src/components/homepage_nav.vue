@@ -8,7 +8,7 @@
             </p>
         </div>
         <el-divider direction="vertical" />
-        <img src="../assets/vue.svg" class="w-9 h-9 object-contain mr-5 float-right hover:w-15 hover:h-15"/>
+        <img src="../assets/vue.svg" class="w-9 h-9 object-contain mr-5 float-right"/>
         <p class="font-bold">{{logUser}}</p>
     </nav>
 </template>
