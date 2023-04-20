@@ -9,9 +9,9 @@
 </template>
 
 <script>
-    import homepage_nav from "./components/homepage_nav.vue";
-    import homepage_hero from "./components/homepage_hero.vue";
-    import homepage_search from "./components/homepage_search.vue";
+    import homepage_nav from "./homepage_nav.vue";
+    import homepage_hero from "./homepage_hero.vue";
+    import homepage_search from "./homepage_search.vue";
 
     export default {
         name: 'Homepage',

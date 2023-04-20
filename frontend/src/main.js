@@ -1,11 +1,12 @@
-import { createApp } from 'vue'
+import {createApp} from 'vue'
 import './index.css'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
-import Homepage from './Homepage.vue'
+import App from './App.vue'
+import router from './index.js'
 
-const homepage = createApp(Homepage)
+createApp(App)
+    .use(ElementPlus)
+    .use(router)
+    .mount('#app')
 
-homepage.use(ElementPlus)
-
-homepage.mount('#homepage')
