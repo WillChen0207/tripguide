@@ -1,7 +1,7 @@
 <template>
     <div class="relative z-0 bg-primary">
         <div class="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-            <homepage_nav></homepage_nav>
+            <homepage_nav v-bind:isLogin="isLogin"></homepage_nav>
             <homepage_hero></homepage_hero>
             <homepage_search></homepage_search>
         </div>
@@ -22,7 +22,7 @@
         },
         data() {
             return {
-
+                isLogin: true
             }
         },
         methods: {

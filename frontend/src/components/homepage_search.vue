@@ -14,12 +14,9 @@
                             />
                         </div>
                         <div class="float-right">
-                            <button type="button" class="py-2 px-10 text-black font-semibold rounded-full shadow-2xl bg-blue-200" @click="checkDate">
-                                <p>检索</p>
+                            <button type="button" class="py-2 px-10 text-black font-semibold rounded-full bg-blue-200" @click="checkDate">
+                                <span>检索</span>
                             </button>
-                        </div>
-                        <div>
-                            {{dateRange}}
                         </div>
                 </el-tab-pane>
                 <el-tab-pane label="航班" name="flight">航班</el-tab-pane>
@@ -43,7 +40,15 @@
         },
         methods: {
             checkDate() {
-                console.log(this.dateRange)
+                console.log(this.formatDate())
+            },
+            formatDate() {
+                let st = this.dateRange[0]
+                let ed = this.dateRange[1]
+                let option = {year:'numeric', month:'long', day:'numeric', weekday:'long'}
+                let resSt = st.toLocaleDateString('zh-CN', option)
+                let resEd = ed.toLocaleDateString('zh-CN', option)
+                return [resSt, resEd]
             }
         }
     }
