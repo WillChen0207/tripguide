@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Homepage from "./components/Homepage.vue";
-import Login from "./components/Login.vue";
-import Register from "./components/Register.vue";
+import Homepage from "../components/Homepage.vue";
+import Login from "../components/Login.vue";
+import Register from "../components/Register.vue";
 
 //路由数组
 const routes = [

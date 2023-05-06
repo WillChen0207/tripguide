@@ -3,7 +3,7 @@ import './index.css'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import App from './App.vue'
-import router from './index.js'
+import router from './router/index.js'
 
 createApp(App)
     .use(ElementPlus)
